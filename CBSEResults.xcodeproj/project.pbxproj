@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A609BCB71B524C5600D69B96 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609BCB41B524C5600D69B96 /* HTMLNode.swift */; };
+		A609BCB81B524C5600D69B96 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609BCB51B524C5600D69B96 /* HTMLParser.swift */; };
 		A6DCB1271B48FEEC003EAEE6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCB1261B48FEEC003EAEE6 /* main.swift */; };
-		A6DCB13B1B490684003EAEE6 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCB1381B490684003EAEE6 /* HTMLParser.swift */; };
-		A6DCB13C1B490684003EAEE6 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DCB1391B490684003EAEE6 /* HTMLNode.swift */; };
 		A6DCB13E1B4906DC003EAEE6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DCB13D1B4906DC003EAEE6 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A609BCB41B524C5600D69B96 /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLNode.swift; path = "HTMLParser/Swift-HTML-Parser/HTMLNode.swift"; sourceTree = SOURCE_ROOT; };
+		A609BCB51B524C5600D69B96 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = "HTMLParser/Swift-HTML-Parser/HTMLParser.swift"; sourceTree = SOURCE_ROOT; };
+		A609BCB61B524C5600D69B96 /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Swift-HTML-Parser-Bridging-Header.h"; path = "HTMLParser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A6DCB1231B48FEEC003EAEE6 /* CBSEResults */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CBSEResults; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DCB1261B48FEEC003EAEE6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		A6DCB1381B490684003EAEE6 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
-		A6DCB1391B490684003EAEE6 /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
-		A6DCB13A1B490684003EAEE6 /* Swift-HTML-Parser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-HTML-Parser-Bridging-Header.h"; sourceTree = "<group>"; };
 		A6DCB13D1B4906DC003EAEE6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -67,9 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				A6DCB1261B48FEEC003EAEE6 /* main.swift */,
-				A6DCB1381B490684003EAEE6 /* HTMLParser.swift */,
-				A6DCB1391B490684003EAEE6 /* HTMLNode.swift */,
-				A6DCB13A1B490684003EAEE6 /* Swift-HTML-Parser-Bridging-Header.h */,
+				A609BCB41B524C5600D69B96 /* HTMLNode.swift */,
+				A609BCB51B524C5600D69B96 /* HTMLParser.swift */,
+				A609BCB61B524C5600D69B96 /* Swift-HTML-Parser-Bridging-Header.h */,
 			);
 			path = CBSEResults;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A609BCB71B524C5600D69B96 /* HTMLNode.swift in Sources */,
 				A6DCB1271B48FEEC003EAEE6 /* main.swift in Sources */,
-				A6DCB13B1B490684003EAEE6 /* HTMLParser.swift in Sources */,
-				A6DCB13C1B490684003EAEE6 /* HTMLNode.swift in Sources */,
+				A609BCB81B524C5600D69B96 /* HTMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +230,7 @@
 					/usr/include/libxml2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CBSEResults/Swift-HTML-Parser-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HTMLParser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -247,7 +247,7 @@
 					/usr/include/libxml2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CBSEResults/Swift-HTML-Parser-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HTMLParser/Swift-HTML-Parser/Swift-HTML-Parser-Bridging-Header.h";
 			};
 			name = Release;
 		};
