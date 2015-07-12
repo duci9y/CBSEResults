@@ -1,0 +1,3 @@
+[submodule "HTMLParser"]
+	path = HTMLParser
+	url = https://github.com/tid-kijyun/Swift-HTML-Parser.git
